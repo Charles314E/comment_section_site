@@ -1,0 +1,99 @@
+.reply_tag {
+    height: 22px;
+    position: relative;
+    border-radius: 16px;
+}
+form.comment textarea {
+    font-family: "Helvetica";
+    font-size: 1em;
+}
+div.comment.black a {
+    color: rgb(155, 155, 200);
+}
+div.comment.black a:active {
+    color: rgb(255, 55, 55);
+}
+div.comment.white a {
+    color: rgb(0, 0, 155);
+}
+div.comment.white a:active {
+    color: rgb(255, 0, 0);
+}
+.reply {
+    position: relative;
+    left: 32px;
+}
+.symbol {
+    font-family: "Symbol";
+}
+
+.indented {
+    position: relative;
+    left: 64px;
+    width: calc(100% - 80px);
+}
+
+form.comment input, form.comment a {
+    font-family: "Helvetica";
+    font-size: 1em;
+    float: left;
+}
+form.comment input {
+    height: 32px;
+}
+form.comment a {
+    height: 28px;
+    text-align: center;
+}
+div.comment {
+    margin-bottom: 8px;
+}
+div.comment_form {
+    width: 100%;
+}
+@media screen and (min-width: 481px) {
+    form.comment input, form.comment a {
+        width: calc(50% - 16px);
+        position: relative;
+        top: 8px;
+        left: 16px;
+    }
+    form.comment textarea {
+        width: calc(100% - 32px);
+        height: 64px;
+        position: relative;
+        top: 8px;
+        left: 16px;
+    }
+    div.comment_form {
+        position: relative;
+        margin-bottom: 16px;
+        max-width: calc(100% - 16px);
+    }
+    .reply_tag {
+        top: -72;
+        left: 18;
+    }
+}
+@media screen and (max-width: 480px) {
+    form.comment input, form.comment a {
+        width: 50%;
+    }
+    form.comment textarea {
+        width: 100%;
+        height: calc(100% - 32px);
+    }
+    div.comment_form {
+        max-width: calc(100% - 32px);
+        bottom: 0px;
+        height: 96px;
+        margin-left: 0px;
+        margin-bottom: 4px;
+        position: fixed;
+        z-index: 1;
+    }
+    .reply_tag {
+        top: -80;
+        left: 0;
+    }
+}

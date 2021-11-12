@@ -1,0 +1,26 @@
+.has-tooltip {
+    overflow: auto;
+}
+
+.has-tooltip .tooltip {
+    width: auto;
+    height: auto;
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.has-tooltip:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip.white {
+    color: black;
+}

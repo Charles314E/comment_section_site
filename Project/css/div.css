@@ -1,0 +1,45 @@
+div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+div.header {
+    margin-bottom: 16px;
+}
+
+div.black {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+div.black div.black {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+ul li div.black:hover:not(.tooltip) {
+    background-color: rgba(255, 255, 0, 0.2);
+    color: white;
+}
+
+ul li div.black:active:not(.tooltip) {
+    background-color: rgba(255, 255, 0, 0.4);
+    color: white;
+}
+
+div.white {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+ul li div.white:hover:not(.tooltip) {
+    background-color: rgba(255, 255, 0, 0.2);
+    color: black;
+}
+
+ul li div.white:active:not(.tooltip) {
+    background-color: rgba(255, 255, 0, 0.4);
+    color: black;
+}

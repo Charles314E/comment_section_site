@@ -1,0 +1,27 @@
+img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.icon {
+    max-width: 64px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.icon:hover {
+    opacity: 0.9;
+}
+.icon:active {
+    opacity: 1;
+}
+
+div.desktop.inline {
+    display: inline-block;
+}
+
+@media screen and (max-width: 481px) {
+    div.desktop.inline {
+        display: none;
+    }
+}

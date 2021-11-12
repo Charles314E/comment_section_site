@@ -1,0 +1,69 @@
+body {
+    background-image: url("../image/background2.jpg");
+    background-repeat: repeat-y;
+    font-family: "Helvetica";
+}
+
+h1 {
+    font-size: 3em;
+    font-family: "Title";
+    text-align: center;
+}
+h1:before {
+    content: "{ ";
+}
+h1:after {
+    content: " }";
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "Title";
+    text-align: center;
+}
+h2:before {
+    content: "[ ";
+}
+h2:after {
+    content: " ]";
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: "Title";
+    text-align: center;
+}
+h3:before {
+    content: "( ";
+}
+h3:after {
+    content: " )";
+}
+
+.inline {
+    display: inline;
+}
+div.inline {
+    position: relative;
+}
+
+.desktop {
+    display: block;
+}
+.desktop.inline {
+    display: inline;
+}
+.mobile {
+    display: none;
+}
+@media screen and (max-width: 481px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .mobile.inline {
+        display: inline;
+    }
+}

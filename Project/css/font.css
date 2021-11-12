@@ -1,0 +1,21 @@
+/* REG: 1805098 */
+
+@font-face {
+	font-family: "Title";
+	src: url("../fonts/ColderWeather-Regular.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "Symbol";
+	src: url("../fonts/webdings.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "Korean Calligraphy";
+	src: url("../fonts/KoreanCalligraphy.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "Gyosho";
+	src: url("../fonts/Gyosho.ttf") format('truetype');
+}
